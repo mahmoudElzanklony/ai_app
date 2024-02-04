@@ -6,13 +6,18 @@
     </div>
     <div class="md:pl-72 pb-10">
       <!-- navbar -->
+      <Navbar></Navbar>
       <slot></slot>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts">
+import Navbar from "../components/Navbar.vue";
 
+export default {
+  components: {Navbar}
+}
 </script>
 
 
